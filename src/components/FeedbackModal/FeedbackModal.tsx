@@ -1,25 +1,22 @@
+'use client';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Backdrop from '@mui/material/Backdrop';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 
 type ModalProps = {
-  title: string;
   message: string;
-}
+  open: boolean;
+  setOpen: (open: boolean) => void;
+};
 
-
-export default function FeedbackModal({ title, message }: ModalProps) {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+export default function FeedbackModal({ message, open, setOpen }: ModalProps) {
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -34,25 +31,24 @@ export default function FeedbackModal({ title, message }: ModalProps) {
         }}
       >
         <Fade in={open}>
-          <Box sx={{
-            position: 'absolute' as 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: 400,
-            bgcolor: 'background.paper',
-            border: '2px solid #000',
-            boxShadow: 24,
-            p: 4,
-          }}>
-            <Typography id="response-modal-title" variant="h6" component="h2">
-              {title}
-            </Typography>
+          <Box
+            sx={{
+              position: 'absolute' as const,
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: 400,
+              bgcolor: 'background.paper',
+              border: '2px solid #000',
+              boxShadow: 24,
+              p: 4,
+            }}
+          >
             <Typography id="response-modal-message" sx={{ mt: 2 }}>
               {message}
             </Typography>
           </Box>
-        </Fade >
+        </Fade>
       </Modal>
     </div>
   );

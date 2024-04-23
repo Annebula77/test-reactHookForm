@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 14.2 Project
+
+This project is built using [Next.js 14.2](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It incorporates several modern web technologies and libraries to deliver a robust development setup.
+
+## Technologies Used
+
+- **[Next.js 14.2](https://nextjs.org/docs)** - The React framework for production.
+- **[Zod](https://zod.dev/)** - TypeScript-first schema validation with static type inference.
+- **[Material-UI (MUI)](https://mui.com/)** - A comprehensive suite of UI tools designed to integrate seamlessly with React.
+- **[React Hook Form](https://react-hook-form.com/)** - Performant, flexible, and extensible forms with easy-to-use validation.
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript with syntax for types.
+- **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapidly building custom designs.
+- **[Axios](https://axios-http.com/)** - Promise-based HTTP client for the browser and node.js.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, clone the repository and install dependencies:
+
+```bash
+git clone <your-repository-url>
+cd <your-project-directory>
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+## Running the Development Server
+
+Run the development server using one of the following commands:Running the Development Server
+
+Run the development server using one of the following commands:
 
 ```bash
 npm run dev
+
 # or
+
 yarn dev
+
 # or
+
 pnpm dev
+
 # or
+
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Test Credentials
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Use the following hardcoded credentials for testing purposes:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+email: 'admin@example.com',
+password: 'passWord123',

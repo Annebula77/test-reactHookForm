@@ -1,5 +1,4 @@
-import FormStepper from "src/components/FormWithStepper/FormWithStepper";
-
+import FormStepper from 'src/components/FormWithStepper/FormWithStepper';
 
 export default function Home() {
   return (
